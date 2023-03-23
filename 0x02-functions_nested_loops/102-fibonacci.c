@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i;
-    unsigned long long j = 1;
-    unsigned long long final = 1;
-    unsigned long long next = 1;
+    unsigned long j = 1;
+    unsigned long final = 1;
+    unsigned long  next = 1;
 
     for (i = 1; i <= 50; i++)
     {
