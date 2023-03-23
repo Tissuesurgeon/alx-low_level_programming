@@ -7,24 +7,31 @@
  *
  * Return: 0 if succesful
  */
-
 int main(void)
 {
-	int loop;
-	unsigned long f1 = 0, f2 = 1, fib;
+	int i;
+    unsigned long long j = 1;
+    unsigned long long final = 1;
+    unsigned long long next = 1;
 
-	for (loop = 0; loop < 50; loop++)
-	{
-		fib = f1 + f2;
-		printf("%lu", fib);
+    for (i = 1; i <= 50; i++)
+    {
+       printf("%lu ", final);
+       final = next + j; 
+       next = j;
+       j = final;
 
-		f1 = f2;
-		f2 = fib;
+       if(i == 50)
+       
+        printf("\n");
+       
+       else
+       
+        printf(", ");
 
-		if (loop == 49)
-			printf("\n");
-		else
-			printf(", ");
-	}
-
+       
+        
+    }
+	printf("\n");
 	return (0);
+}
