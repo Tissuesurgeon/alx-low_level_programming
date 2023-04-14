@@ -8,11 +8,11 @@
  * Return: pointer to the allocated memory or exit normal with statis 98
  */
 
-void *malloc_checked(unsigned int a)
+void *malloc_checked(unsigned int b)
 {
 	void *memory;
 
-	extra_memory = malloc(a);
+	extra_memory = malloc(b);
 
 	if (extra_memory == NULL)
 		exit(98);
